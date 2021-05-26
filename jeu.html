@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jeu du lancé de dé</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+  </head>
+  <body>
+
+    <div class="container">
+      <h1 id="affiche" >Start</h1>
+
+
+
+      <div class="rules">
+        <h2>le plus grand :</h2>
+        <h3> le joueur avec le plus grand score gagne <br>
+          appuie sur historique pour voir la partie précedente
+        </h3>
+      </div>
+
+      <div>
+        <button  onclick="roll()"> Jouer </button>
+        <button  onclick="load()"> historique </button>
+      </div>
+
+      <div class="dice">
+        <p>Joueur 1</p>
+        <img class="img1"  id="dice1" src="images/dice1.png" alt="image">
+      </div>
+
+      <div class="dice">
+        <p>Joueur 2</p>
+
+        <img class="img2" id="dice2" src="images/dice1.png" alt="image">
+      </div>
+
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+  <footer>
+    <div>
+      <h2> nombre de:</h2>
+      <h3 id="nb1"> nombre de 1: 0 </h3>
+      <h3 id="nb2"> nombre de 2: 0</h3>
+      <h3 id="nb3"> nombre de 3: 0 </h3>
+      <h3 id="nb4"> nombre de 4: 0</h3>
+      <h3 id="nb5"> nombre de 5: 0</h3>
+      <h3 id="nb6"> nombre de 6: 0</h3>
+    </div>
+    <div class="score">
+      <h2> score:</h2>
+      <h3 id="win1">joueur 1 à gagner 0 fois soit: 0% </h3>
+      <h3 id="win2">joueur 2 à gagner 0 fois soit: 0%  </h3>
+    </div>
+
+  </footer>
+</html>
